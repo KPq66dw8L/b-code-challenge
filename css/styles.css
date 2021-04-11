@@ -109,19 +109,8 @@ p {
 .top-container *,
 .mid-container * {
   display: inline;
-  /* transform: scale(2);
-    transition: all 1s ease;
-    animation: scrollText 33s infinite linear;
-    white-space: nowrap;
-    width: 800px;
-    height: 600px; */
 }
 
-/* @keyframes scrollText {
-    from   { transform: translateX(0%); }
-    to { transform: translateX(-50%); }
-}
- */
 .bot-container-img {
   -ms-grid-row: 3;
       grid-row-start: 3;
@@ -157,7 +146,7 @@ p {
 
 .mail {
   /* CHANGED THE COLOR IN THE SVG CODE */
-  width: 10%;
+  width: 5%;
   margin-right: 3vh;
 }
 
@@ -294,5 +283,79 @@ section img {
 
 .bordu2 {
   border-bottom: #FEF501 solid 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: auto;
+  }
+  .all {
+    -ms-grid-columns: 1fr 1fr 40%;
+        grid-template-columns: 1fr 1fr 40%;
+    -ms-grid-rows: 1fr 1fr 30% 2fr;
+        grid-template-rows: 1fr 1fr 30% 2fr;
+    height: auto;
+  }
+  .bot-container-text {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+    margin-left: 10vh;
+    margin-top: 0;
+  }
+  .bot-container-img {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .ellipse1 {
+    top: 5vh;
+    left: 15vh;
+  }
+  .ellipse2 {
+    top: 30vh;
+    left: 45vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    overflow: auto;
+  }
+  .all {
+    -ms-grid-columns: 1fr 1fr 40%;
+        grid-template-columns: 1fr 1fr 40%;
+    -ms-grid-rows: 1fr 1fr 50% 2fr;
+        grid-template-rows: 1fr 1fr 50% 2fr;
+    height: auto;
+  }
+  .bot-container-text {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+    margin-left: 4vh;
+    margin-top: 0;
+  }
+  .bot-container-img {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .ellipse1 {
+    top: 5vh;
+    left: 15vh;
+  }
+  .ellipse2 {
+    top: 30vh;
+    left: 45vh;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
